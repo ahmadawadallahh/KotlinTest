@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/add_person_dialog">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/otp_dialog_fragment_tool_bar"
+        app:title="One Time Password"
+        android:textAlignment="center"
+        app:titleTextColor="@color/light_black"
+        android:gravity="center"
+        app:titleMarginStart="50dp"
+        />
+
+    <EditText
+        android:id="@+id/first_name_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/otp_dialog_fragment_tool_bar"
+        android:layout_marginHorizontal="12dp"
+        android:hint="Enter First Name"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/last_name_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/first_name_edt"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="12dp"
+        android:hint="Enter First Name"
+        tools:ignore="TouchTargetSizeCheck" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/last_name_edt"
+        android:text="ADD"
+        android:id="@+id/add_btn"/>
+
+</RelativeLayout>
